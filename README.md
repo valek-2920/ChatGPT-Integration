@@ -10,6 +10,7 @@ This project will allow you to consume the OpenAI API to use the software ChatGP
 ```
 
 To activate the virtual environment: .\venv\Scripts\activate
+
 To deactivate the virtual environment: deactivate
 
 ## Packages used in Backend
@@ -22,9 +23,11 @@ To deactivate the virtual environment: deactivate
 ```
 
 To run the API: uvicorn main:app --reload
+
 To stop the API: CTRL + C
 
 For the frontend, remember to install the needed npm packages using: npm install
+
 To run the frontend: yarn start
 
 ## Acknowledgements
