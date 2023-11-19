@@ -28,7 +28,9 @@ To stop the API: CTRL + C
 
 For the frontend, remember to install the needed npm packages using: npm install
 
-To run the frontend: yarn start
+To run React: yarn start
+
+To stop React: CTRL + C
 
 ## Acknowledgements
 
