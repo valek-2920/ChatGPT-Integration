@@ -38,7 +38,7 @@ function HomeController() {
           const audio = new Audio();
           audio.src = createBlobUrl(response.data);
 
-          const sarahMessage = { sender: "sarah", blobUrl: audio.src };
+          const sarahMessage = { sender: "glenda", blobUrl: audio.src };
           messagesArr.push(sarahMessage);
           setMessages(messagesArr);
 
@@ -61,13 +61,13 @@ function HomeController() {
                 key={index + audio.sender}
                 className={
                   "flex flex-col " +
-                  (audio.sender == "sarah" && "flex items-end")
+                  (audio.sender == "glenda" && "flex items-end")
                 }
               >
                 <div className="mt-4">
                   <p
                     className={
-                      audio.sender == "sarah"
+                      audio.sender == "glenda"
                         ? "text-right mr-2 italic text-green-500"
                         : "ml-2 italic text-blue-500"
                     }
