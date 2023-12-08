@@ -38,8 +38,8 @@ function HomeController() {
           const audio = new Audio();
           audio.src = createBlobUrl(response.data);
 
-          const sarahMessage = { sender: "glenda", blobUrl: audio.src };
-          messagesArr.push(sarahMessage);
+          const glendaMessage = { sender: "glenda", blobUrl: audio.src };
+          messagesArr.push(glendaMessage);
           setMessages(messagesArr);
 
           setIsLoading(false);
@@ -87,7 +87,7 @@ function HomeController() {
 
           {messages.length == 0 && !isLoading && (
             <div className="text-center font-light italic mt-10">
-              Send Sarah a message...
+              Send Glenda a message...
             </div>
           )}
 
